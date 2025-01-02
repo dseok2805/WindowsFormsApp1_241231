@@ -16,7 +16,7 @@ namespace WindowsFormsApp1_241231
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new buttonLevelUp());
         }
     }
 }

@@ -16,6 +16,12 @@ namespace WindowsFormsApp1_241231
         {
             System.Console.WriteLine($"{Name} smashes with brute strength, dealing {AttackPower} damage!");
         }
+
+        public override void Talk()
+        {
+            System.Windows.Forms.MessageBox.Show($"{Name} growls: I will crush you!");
+            // Orc 몬스터의 대사를 출력하는 메소드
+        }
     }
 
 }

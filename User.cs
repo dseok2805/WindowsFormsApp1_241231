@@ -13,6 +13,25 @@ namespace WindowsFormsApp1_241231
         }
 
         public abstract void Defend();
+
+        // LevelUp method overloads
+        public void LevelUp(int hp)
+        {
+            HP += hp;
+            System.Windows.Forms.MessageBox.Show($"{Name} leveled up! HP increased by {hp}. New HP: {HP}");
+        }
+
+        public void LevelUp(int hp, int power)
+        {
+            HP += hp;
+            AttackPower += power;
+            System.Windows.Forms.MessageBox.Show($"{Name} leveled up! HP increased by {hp} and Attack Power increased by {power}. New HP: {HP}, New Attack Power: {AttackPower}");
+        }
+
+        public void LevelUp()
+        {
+            System.Windows.Forms.MessageBox.Show($"Error: No level-up parameters provided for {Name}. Please specify HP or HP and Attack Power.", "Level Up Error");
+        }
     }
 
 }

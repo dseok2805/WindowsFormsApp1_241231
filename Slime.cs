@@ -16,6 +16,12 @@ namespace WindowsFormsApp1_241231
         {
             System.Console.WriteLine($"{Name} jumps and splashes, dealing {AttackPower} damage!");
         }
+
+        public override void Talk()
+        {
+            System.Windows.Forms.MessageBox.Show($"{Name} bubbles: *squishy noises*");
+            // 슬라임 몬스터의 대사를 출력하는 메소드
+        }
     }
 
 }

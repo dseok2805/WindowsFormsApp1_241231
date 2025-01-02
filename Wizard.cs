@@ -21,6 +21,12 @@ namespace WindowsFormsApp1_241231
         {
             System.Console.WriteLine($"{Name} uses a magical shield to defend!");
         }
+
+        public override void Talk()
+        {
+            System.Windows.Forms.MessageBox.Show($"{Name} says: I am Wizard!");
+            // 마법사의 대사를 출력하는 메소드
+        }
     }
 
 }

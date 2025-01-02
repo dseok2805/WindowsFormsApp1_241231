@@ -16,6 +16,12 @@
         }
 
         public abstract void Attack();
+
+        public virtual void Talk()
+        {
+            System.Windows.Forms.MessageBox.Show($"{Name} says: Hello!");
+            // 캐릭터별로 인사하는 Talk() 메소드를 생성함
+        }
     }
 
 }
